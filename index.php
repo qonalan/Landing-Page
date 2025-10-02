@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <img src="assets/profile.jpg" alt="Foto Profil" class="profile-img">
+            <h1>Halo, Saya John Doe</h1>
+            <p>Web Developer | Freelancer | Tech Enthusiast</p>
+
+            <div class="social-links">
+                <a href="https://github.com/username" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+                <a href="mailto:email@example.com">Email</a>
+            </div>
+
+            <?php
+                // Menampilkan tahun secara dinamis
+                $tahun = date("Y");
+                echo "<footer>&copy; $tahun John Doe</footer>";
+            ?>
+        </div>
+    </div>
+</body>
+</html>
