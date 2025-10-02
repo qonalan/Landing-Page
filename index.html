@@ -19,12 +19,13 @@
                 <a href="mailto:email@example.com">Email</a>
             </div>
 
-            <?php
-                // Menampilkan tahun secara dinamis
-                $tahun = date("Y");
-                echo "<footer>&copy; $tahun John Doe</footer>";
-            ?>
+            <footer>&copy; <span id="year"></span> John Doe</footer>
         </div>
     </div>
+
+    <script>
+        // JavaScript untuk menampilkan tahun saat ini
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
